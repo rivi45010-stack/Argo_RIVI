@@ -25,7 +25,7 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v2
         with:
-          context: ./Global-Argo/src/Dockerfile  # Path to the Dockerfile and build context
+          context: ./Global-Argo/src/ # Path to the Dockerfile and build context
           push: true
           tags: |
            rivi45010/app-node:${{ github.sha }}
