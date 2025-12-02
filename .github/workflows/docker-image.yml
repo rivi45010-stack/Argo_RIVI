@@ -28,7 +28,7 @@ jobs:
           context: ./Global-Argo/src/ # Path to the Dockerfile and build context
           push: true
           tags: |
-           rivi45010/rivi:${{ github.sha }}
+           rivi45010/rivi:last-chance
 
       - name: Logout from Docker Hub
         run: docker logout
